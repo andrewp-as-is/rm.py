@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+import tempfile
+from rm import rm
+
+rm(tempfile.mkdtemp())
