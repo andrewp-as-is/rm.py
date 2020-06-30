@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+__all__ = ['rm']
+
+
 import os
 import shutil
-import public
 import values
 
 """
@@ -13,7 +14,6 @@ pathlib.Path.rmdir() removes the empty directory.
 """
 
 
-@public.add
 def rm(path):
     """remove path(s) (if exists)"""
     for path in values.get(path):
